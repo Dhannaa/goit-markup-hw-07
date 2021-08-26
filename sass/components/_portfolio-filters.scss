@@ -10,23 +10,22 @@
   border: transparent;
   padding: 6px 22px;
   border-radius: 4px;
-  color: var(--primary-text-color);
-  background-color: var(--secondary-bg-color);
+  color: $primary-text-color;
+  background-color: $secondary-bg-color;
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  transition: color var(--transition-duration) var(--transition-timing-function),
-    background-color var(--transition-duration)
-      var(--transition-timing-function),
-    box-shadow var(--transition-duration) var(--transition-timing-function);
+  transition: color $transition-duration $transition-timing-function,
+    background-color $transition-duration $transition-timing-function,
+    box-shadow $transition-duration $transition-timing-function;
 }
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: $primary-white-color;
+  background-color: $accent-color;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }

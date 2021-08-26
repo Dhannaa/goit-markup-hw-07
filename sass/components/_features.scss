@@ -14,10 +14,10 @@
   flex-wrap: wrap;
 }
 .feature-item {
-  width: calc((100% - 3 * var(--card-set-gap)) / 4);
+  width: calc((100% - 3 * $card-set-gap) / 4);
 }
 .feature-item:not(:last-child) {
-  margin-right: var(--card-set-gap);
+  margin-right: $card-set-gap;
 }
 .feature-thumb {
   width: 270px;
@@ -31,7 +31,7 @@
 }
 .section-subtitle {
   margin-bottom: 10px;
-  color: var(--primary--text-color);
+  color: $primary--text-color;
   font-weight: 700;
   text-transform: uppercase;
 }

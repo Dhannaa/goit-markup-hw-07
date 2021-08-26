@@ -15,7 +15,7 @@
   display: block;
 }
 .footer-logo-studio {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
 
 .address-item:not(:last-child) {
@@ -26,19 +26,19 @@
   margin-top: 20px;
 }
 .address-text {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
 .address-link {
-  color: var(--address-link-color);
+  color: $address-link-color;
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  transition: color var(--transition-duration) var(--transition-timing-function);
+  transition: color $transition-duration $transition-timing-function;
 }
 .address-link:hover,
 .address-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .footer-social {
@@ -50,7 +50,7 @@
 }
 .footer-title {
   width: 145px;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -64,21 +64,20 @@
 .footer-social-link {
   width: 44px;
   height: 44px;
-  fill: var(--primary-white-color);
+  fill: $primary-white-color;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color var(--transition-duration)
-    var(--transition-timing-function);
+  transition: background-color $transition-duration $transition-timing-function;
 }
 .icon-footer {
   height: 20px;
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .form-footer {
@@ -91,7 +90,7 @@
   margin-bottom: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
 .form-footer-field {
   display: flex;
@@ -118,7 +117,7 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.01em;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
 
 .btn-form-footer {
@@ -127,8 +126,8 @@
   min-width: 200px;
   padding: 10px 28px 10px 29px;
   margin-left: 12px;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: $primary-white-color;
+  background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0px solid transparent;
   border-radius: 4px;
@@ -139,8 +138,7 @@
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-  transition: background-color var(--transition-duration)
-    var(--transition-timing-function);
+  transition: background-color $transition-duration $transition-timing-function;
 }
 
 .btn-form-footer:hover,

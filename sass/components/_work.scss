@@ -6,7 +6,7 @@
   position: relative;
 }
 .work-item:not(:last-child) {
-  margin-right: var(--card-set-gap);
+  margin-right: $card-set-gap;
 }
 
 .work-thumb {
@@ -27,5 +27,5 @@
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
