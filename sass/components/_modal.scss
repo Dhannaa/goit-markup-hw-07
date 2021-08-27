@@ -3,8 +3,7 @@
   top: 0;
   left: 0;
   opacity: 1;
-  transition: opacity $transition-duration
-    $transition-timing-function;
+  transition: opacity $transition-duration $transition-timing-function;
 
   width: 100%;
   height: 100%;
@@ -31,10 +30,9 @@
   border: 1px solid #000000;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: transform $transition-duration
-    $transition-timing-function;
+  transition: transform $transition-duration $transition-timing-function;
 }
-.btn-modal {
+.modal__button {
   cursor: pointer;
   position: absolute;
   width: 30px;
@@ -53,7 +51,7 @@
 .form {
   padding: 40px;
 }
-.form-feedback {
+.form__feedback {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -61,17 +59,17 @@
   margin-bottom: 12px;
 }
 
-.form-field {
+.form__field {
   position: relative;
   display: block;
   margin-bottom: 10px;
 }
-.form-field-comment {
+.form__field-comment {
   position: relative;
   display: block;
   margin-bottom: 20px;
 }
-.form-label {
+.form__label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -81,16 +79,16 @@
   color: $secondary-text-color;
   cursor: pointer;
 }
-.form-checkbox {
+.form__checkbox {
   line-height: 1.71;
   color: $secondary-text-color;
 }
-.checkbox-link {
+.form__checkbox-link {
   line-height: 1.71;
   color: $accent-color;
   text-decoration: underline;
 }
-.form-input {
+.form__input {
   width: 100%;
   margin: 0;
   padding-top: 11px;
@@ -99,17 +97,16 @@
   font: inherit;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border-color $transition-duration
-    $transition-timing-function;
+  transition: border-color $transition-duration $transition-timing-function;
 }
-.icon-form {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
   display: inline-block;
   transition: fill $transition-duration $transition-timing-function;
 }
-.form-textarea {
+.form__textarea {
   position: relative;
   display: block;
   padding: 12px 16px;
@@ -120,29 +117,28 @@
   border-radius: 4px;
   resize: none;
   cursor: pointer;
-  transition: border-color $transition-duration
-    $transition-timing-function;
+  transition: border-color $transition-duration $transition-timing-function;
 }
 
-.form-field textarea::placeholder {
+.form__field textarea::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field:focus-within > .form-input {
+.form__field:focus-within > .form__input {
   border-color: $accent-color;
   outline: none;
 }
-.form-field:focus-within > .icon-form {
+.form__field:focus-within > .form__icon {
   fill: $accent-color;
 }
-.form-field-comment:focus-within > .form-textarea {
+.form__field-comment:focus-within > .form__textarea {
   border-color: $accent-color;
   outline: none;
 }
-.checkbox {
+.form__imput-checkbox {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -152,12 +148,12 @@
   padding: 0;
   overflow: hidden;
 }
-.form-checkbox {
+.form__checkbox {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
 }
-.form-checkbox-icon {
+.form__checkbox-box {
   display: flex;
   align-items: center;
   width: 16px;
@@ -167,14 +163,14 @@
   border-radius: 2px;
 }
 
-.checkbox:checked + .form-checkbox-icon {
+.form__checkbox:checked + .form__checkbox-box {
   border-color: $accent-color;
   background-color: $accent-color;
   background-size: contain;
   background-origin: border-box;
 }
 
-.btn-form {
+.form__button {
   display: inline-block;
   min-width: 200px;
   padding: 10px 56px;
@@ -190,10 +186,10 @@
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-  transition: background-color $transition-duration
-    $transition-timing-function;
-}
-.btn-form:hover,
-.btn-form:focus {
-  background-color: #188ce8;
+  transition: background-color $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }

@@ -1,14 +1,21 @@
-.logo-web,
-.logo-studio,
-.footer-logo-studio {
+.logo {
+  display: block;
+}
+
+.logo__label-web,
+.logo__label-studio {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
-.logo-web {
+.logo__label-web {
   color: $accent-color;
 }
-.logo-studio {
+.logo__label-studio {
   color: #000000;
+}
+
+.logo__label-studio--inverse {
+  color: $primary-white-color;
 }

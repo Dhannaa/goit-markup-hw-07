@@ -11,12 +11,6 @@
   display: block;
   min-width: 231px;
 }
-.logo-link {
-  display: block;
-}
-.footer-logo-studio {
-  color: $primary-white-color;
-}
 
 .address-item:not(:last-child) {
   margin-bottom: 9px;
@@ -35,6 +29,10 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   transition: color $transition-duration $transition-timing-function;
+}
+.address-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 .address-link:hover,
 .address-link:focus {

@@ -16,7 +16,7 @@
   background-size: cover;
   text-align: center;
 }
-.hero-title {
+.hero__title {
   width: 696px;
   margin-top: 0;
   margin-bottom: $card-set-gap;
@@ -29,7 +29,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.btn-primary {
+.hero__button {
   display: inline-block;
   min-width: 200px;
   padding: 10px 32px;
@@ -46,9 +46,9 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   transition: background-color $transition-duration $transition-timing-function;
-}
 
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }

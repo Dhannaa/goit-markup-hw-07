@@ -11,7 +11,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.flex-container {
+.container--flex {
   display: flex;
   align-items: center;
 }
@@ -19,74 +19,72 @@
   display: flex;
   margin-left: 93px;
 }
-.site-nav-list {
+.site-nav__list {
   display: flex;
 }
-.site-nav-item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.auth-nav-item:not(:last-child) {
+.auth-nav__item:not(:last-child) {
   margin-right: 30px;
 }
-.site-nav-link {
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.icon {
+.auth-nav__icon {
   margin-right: 10px;
   fill: currentColor;
 }
-.auth-nav-list {
+.auth-nav {
   display: flex;
   margin-left: auto;
 }
-.auth-nav-link {
+.auth-nav__link {
   display: flex;
   align-items: center;
 }
 
-/*nav*/
-
-.site-nav-link,
-.auth-nav-link,
-.address-link {
+.site-nav__link,
+.auth-nav__link {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-.site-nav-link {
+.site-nav__link {
   color: $primary-text-color;
   transition: color $transition-duration $transition-timing-function;
-}
-.site-nav-link:hover,
-.site-nav-link:focus {
-  color: $accent-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
-.site-nav-link.current {
+.site-nav__link--current {
   position: relative;
   color: $accent-color;
   transition: color $transition-duration $transition-timing-function;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
 }
 
-.site-nav-link.current::after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: -1px;
-  background-color: $accent-color;
-  border-radius: 2px;
-}
-.auth-nav-link {
+.auth-nav__link {
   color: $secondary-text-color;
   transition: color $transition-duration $transition-timing-function;
-}
-
-.auth-nav-link:hover,
-.auth-nav-link:focus {
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
