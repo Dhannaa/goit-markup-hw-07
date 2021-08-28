@@ -1,10 +1,10 @@
-.client-social-list {
+.client-social {
   display: flex;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
 }
-.client-social-link {
+.client-social__link {
   width: 170px;
   height: 92px;
   fill: $primary-icon-color;
@@ -16,12 +16,13 @@
 
   transition: border $transition-duration $transition-timing-function,
     fill $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
 }
-.icon-client {
+.client-social__icon {
   height: 60px;
-}
-.client-social-link:hover,
-.client-social-link:focus {
-  border: 1px solid $accent-color;
-  fill: $accent-color;
 }
