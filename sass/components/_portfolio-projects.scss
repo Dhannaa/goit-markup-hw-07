@@ -5,13 +5,13 @@
 }
 
 .portfolio-item {
-  width: calc((100% - 2 * $card-set-gap) / 3);
+  width: calc((100% - 2 * 30px) / 3);
 }
 .portfolio-item:not(:nth-child(3n)) {
-  margin-right: $card-set-gap;
+  margin-right: 30px;
 }
 .portfolio-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: $card-set-gap;
+  margin-bottom: 30px;
 }
 .portfolio-link {
   display: block;

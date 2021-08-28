@@ -161,13 +161,13 @@
   margin-right: 7px;
   border: 2px solid $primary-text-color;
   border-radius: 2px;
-}
 
-.form__checkbox:checked + .form__checkbox-box {
-  border-color: $accent-color;
-  background-color: $accent-color;
-  background-size: contain;
-  background-origin: border-box;
+  .form__imput-checkbox:checked + & {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-size: contain;
+    background-origin: border-box;
+  }
 }
 
 .form__button {
