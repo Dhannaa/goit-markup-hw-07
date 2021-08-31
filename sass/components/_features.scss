@@ -8,14 +8,15 @@
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  &--visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
 }
-.section__title--visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
+
 .section__subtitle {
   margin-bottom: 10px;
   color: $primary-text-color;
